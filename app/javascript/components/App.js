@@ -30,7 +30,7 @@ const Button = styled.button`
 
 class App extends Component {
   state = {
-    urlValue: 'people',
+    urlValue: '',
     data: null,
     error: null,
   }
