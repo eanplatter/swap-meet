@@ -1,0 +1,1 @@
+json.extract! starship, :id, :name, :model, :manufacturer, :cost_in_credits, :length, :max_atmoshpering_speed, :crew, :passengers, :cargo_capacity, :consumables, :hyperdrive_rating, :MGLT, :starship_class, :swapi_url

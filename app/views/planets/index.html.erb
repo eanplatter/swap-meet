@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Planets</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Rotation period</th>
+      <th>Orbital period</th>
+      <th>Diameter</th>
+      <th>Climate</th>
+      <th>Gravity</th>
+      <th>Terrain</th>
+      <th>Surface water</th>
+      <th>Population</th>
+      <th>Swapi url</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planets.each do |planet| %>
+      <tr>
+        <td><%= planet.name %></td>
+        <td><%= planet.rotation_period %></td>
+        <td><%= planet.orbital_period %></td>
+        <td><%= planet.diameter %></td>
+        <td><%= planet.climate %></td>
+        <td><%= planet.gravity %></td>
+        <td><%= planet.terrain %></td>
+        <td><%= planet.surface_water %></td>
+        <td><%= planet.population %></td>
+        <td><%= planet.swapi_url %></td>
+        <td><%= link_to 'Show', planet %></td>
+        <td><%= link_to 'Edit', edit_planet_path(planet) %></td>
+        <td><%= link_to 'Destroy', planet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Planet', new_planet_path %>

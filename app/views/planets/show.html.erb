@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @planet.name %>
+</p>
+
+<p>
+  <strong>Rotation period:</strong>
+  <%= @planet.rotation_period %>
+</p>
+
+<p>
+  <strong>Orbital period:</strong>
+  <%= @planet.orbital_period %>
+</p>
+
+<p>
+  <strong>Diameter:</strong>
+  <%= @planet.diameter %>
+</p>
+
+<p>
+  <strong>Climate:</strong>
+  <%= @planet.climate %>
+</p>
+
+<p>
+  <strong>Gravity:</strong>
+  <%= @planet.gravity %>
+</p>
+
+<p>
+  <strong>Terrain:</strong>
+  <%= @planet.terrain %>
+</p>
+
+<p>
+  <strong>Surface water:</strong>
+  <%= @planet.surface_water %>
+</p>
+
+<p>
+  <strong>Population:</strong>
+  <%= @planet.population %>
+</p>
+
+<p>
+  <strong>Swapi url:</strong>
+  <%= @planet.swapi_url %>
+</p>
+
+<%= link_to 'Edit', edit_planet_path(@planet) %> |
+<%= link_to 'Back', planets_path %>

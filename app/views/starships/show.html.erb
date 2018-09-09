@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @starship.name %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @starship.model %>
+</p>
+
+<p>
+  <strong>Manufacturer:</strong>
+  <%= @starship.manufacturer %>
+</p>
+
+<p>
+  <strong>Cost in credits:</strong>
+  <%= @starship.cost_in_credits %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @starship.length %>
+</p>
+
+<p>
+  <strong>Max atmoshpering speed:</strong>
+  <%= @starship.max_atmoshpering_speed %>
+</p>
+
+<p>
+  <strong>Crew:</strong>
+  <%= @starship.crew %>
+</p>
+
+<p>
+  <strong>Passengers:</strong>
+  <%= @starship.passengers %>
+</p>
+
+<p>
+  <strong>Cargo capacity:</strong>
+  <%= @starship.cargo_capacity %>
+</p>
+
+<p>
+  <strong>Consumables:</strong>
+  <%= @starship.consumables %>
+</p>
+
+<p>
+  <strong>Hyperdrive rating:</strong>
+  <%= @starship.hyperdrive_rating %>
+</p>
+
+<p>
+  <strong>Mglt:</strong>
+  <%= @starship.MGLT %>
+</p>
+
+<p>
+  <strong>Starship class:</strong>
+  <%= @starship.starship_class %>
+</p>
+
+<p>
+  <strong>Swapi url:</strong>
+  <%= @starship.swapi_url %>
+</p>
+
+<%= link_to 'Edit', edit_starship_path(@starship) %> |
+<%= link_to 'Back', starships_path %>

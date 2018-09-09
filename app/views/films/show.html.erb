@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @film.title %>
+</p>
+
+<p>
+  <strong>Episode:</strong>
+  <%= @film.episode_id %>
+</p>
+
+<p>
+  <strong>Opening crawl:</strong>
+  <%= @film.opening_crawl %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @film.director %>
+</p>
+
+<p>
+  <strong>Producer:</strong>
+  <%= @film.producer %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @film.release_date %>
+</p>
+
+<p>
+  <strong>Swapi url:</strong>
+  <%= @film.swapi_url %>
+</p>
+
+<%= link_to 'Edit', edit_film_path(@film) %> |
+<%= link_to 'Back', films_path %>

@@ -1,0 +1,77 @@
+<%= form_with(model: vehicle, local: true) do |form| %>
+  <% if vehicle.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vehicle.errors.count, "error") %> prohibited this vehicle from being saved:</h2>
+
+      <ul>
+      <% vehicle.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :model %>
+    <%= form.text_field :model %>
+  </div>
+
+  <div class="field">
+    <%= form.label :manufacturer %>
+    <%= form.text_field :manufacturer %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cost_in_credits %>
+    <%= form.text_field :cost_in_credits %>
+  </div>
+
+  <div class="field">
+    <%= form.label :length %>
+    <%= form.text_field :length %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_atmosphering_speed %>
+    <%= form.text_field :max_atmosphering_speed %>
+  </div>
+
+  <div class="field">
+    <%= form.label :crew %>
+    <%= form.text_field :crew %>
+  </div>
+
+  <div class="field">
+    <%= form.label :passengers %>
+    <%= form.text_field :passengers %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cargo_capacity %>
+    <%= form.text_field :cargo_capacity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :consumables %>
+    <%= form.text_field :consumables %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vehicle_class %>
+    <%= form.text_field :vehicle_class %>
+  </div>
+
+  <div class="field">
+    <%= form.label :swapi_url %>
+    <%= form.text_field :swapi_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

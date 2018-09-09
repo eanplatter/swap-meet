@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @person.height %>
+</p>
+
+<p>
+  <strong>Mass:</strong>
+  <%= @person.mass %>
+</p>
+
+<p>
+  <strong>Hair color:</strong>
+  <%= @person.hair_color %>
+</p>
+
+<p>
+  <strong>Skin color:</strong>
+  <%= @person.skin_color %>
+</p>
+
+<p>
+  <strong>Eye color:</strong>
+  <%= @person.eye_color %>
+</p>
+
+<p>
+  <strong>Birth year:</strong>
+  <%= @person.birth_year %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @person.gender %>
+</p>
+
+<p>
+  <strong>Swapi url:</strong>
+  <%= @person.swapi_url %>
+</p>
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

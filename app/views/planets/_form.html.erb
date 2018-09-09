@@ -1,0 +1,67 @@
+<%= form_with(model: planet, local: true) do |form| %>
+  <% if planet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(planet.errors.count, "error") %> prohibited this planet from being saved:</h2>
+
+      <ul>
+      <% planet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :rotation_period %>
+    <%= form.text_field :rotation_period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :orbital_period %>
+    <%= form.text_field :orbital_period %>
+  </div>
+
+  <div class="field">
+    <%= form.label :diameter %>
+    <%= form.text_field :diameter %>
+  </div>
+
+  <div class="field">
+    <%= form.label :climate %>
+    <%= form.text_field :climate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gravity %>
+    <%= form.text_field :gravity %>
+  </div>
+
+  <div class="field">
+    <%= form.label :terrain %>
+    <%= form.text_field :terrain %>
+  </div>
+
+  <div class="field">
+    <%= form.label :surface_water %>
+    <%= form.text_field :surface_water %>
+  </div>
+
+  <div class="field">
+    <%= form.label :population %>
+    <%= form.text_field :population %>
+  </div>
+
+  <div class="field">
+    <%= form.label :swapi_url %>
+    <%= form.text_field :swapi_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  episode_id: 1
+  opening_crawl: MyString
+  director: MyString
+  producer: MyString
+  release_date: MyString
+  swapi_url: MyString
+
+two:
+  title: MyString
+  episode_id: 1
+  opening_crawl: MyString
+  director: MyString
+  producer: MyString
+  release_date: MyString
+  swapi_url: MyString

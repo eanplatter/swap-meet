@@ -1,0 +1,67 @@
+<%= form_with(model: species, local: true) do |form| %>
+  <% if species.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(species.errors.count, "error") %> prohibited this species from being saved:</h2>
+
+      <ul>
+      <% species.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :classification %>
+    <%= form.text_field :classification %>
+  </div>
+
+  <div class="field">
+    <%= form.label :designation %>
+    <%= form.text_field :designation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_height %>
+    <%= form.text_field :average_height %>
+  </div>
+
+  <div class="field">
+    <%= form.label :skin_colors %>
+    <%= form.text_field :skin_colors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hair_colors %>
+    <%= form.text_field :hair_colors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eye_colors %>
+    <%= form.text_field :eye_colors %>
+  </div>
+
+  <div class="field">
+    <%= form.label :average_lifespan %>
+    <%= form.text_field :average_lifespan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :language %>
+    <%= form.text_field :language %>
+  </div>
+
+  <div class="field">
+    <%= form.label :swapi_url %>
+    <%= form.text_field :swapi_url %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
